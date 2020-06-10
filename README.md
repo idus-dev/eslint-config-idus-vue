@@ -1,6 +1,6 @@
 # Eslint & Prettier 설정
 
-[![npm](https://flat.badgen.net/npm/v/eslint-config-idus)](https://npmjs.com/package/eslint-config-idus)
+[![npm](https://flat.badgen.net/npm/v/eslint-config-idus-vue)](https://npmjs.com/package/eslint-config-idus-vue)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## 설치
@@ -14,7 +14,7 @@ npx install-peerdeps --dev eslint-config-idus-vue
 ``` json
 {
   "extends": [
-    "idus"
+    "idus-vue"
   ]
 }
 ```
