@@ -1,21 +1,19 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
-    },
+    "extends": [
+        "airbnb-base",
+        "plugin:vue/recommended", // vue 파일 검사용
+        "@vue/prettier"
+    ],
     "parserOptions": {
         "parser": "babel-eslint"
+    },
+    "env": {
+        "browser": true,
+        "es6": true
     },
     "plugins": [
         "html", // required to lint .vue file
         "prettier"
-    ],
-    "extends": [
-        "airbnb-base",
-        "prettier",
-        "eslint:recommended",
-        "plugin:vue/recommended" // vue 파일 검사용
     ],
     "settings": {
         "import/resolver": "webpack"
@@ -29,31 +27,20 @@ module.exports = {
                 "vue": "never"
             }
         ],
-        "indent": [
-            "error",
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
         "linebreak-style": [
             "error",
             "unix"
         ],
-        "vue/html-indent": [
+        "prettier/prettier": [
             "error",
-            4,
             {
-                "attribute": 1,
-                "baseIndent": 1,
-                "closeBracket": 0,
-                "alignAttributesVertically": true,
-                "ignores": []
+                "singleQuote": true,
+                "printWidth": 80,
+                "tabWidth": 4,
+                "useTabs": false,
+                "trailingComma": "none",
+                "arrowParens": "avoid"
             }
-        ]
+        ],
     }
 }
